@@ -1,0 +1,95 @@
+		#Menu{
+			width: auto;
+			height: 100px;
+			margin: auto;
+			text-align: center;
+			background-color: black;
+			vertical-align: center;
+		}
+		#Menu_Box{
+			display: inline;
+			width: 250px;
+			height: 75px;
+			margin: auto;
+			padding: 10px 20px;
+			background-color: black;
+			color: #ffffff;
+			font-size: 20px;
+			outline-offset: 0px;
+			outline-style: solid;
+			outline-color: #404040;
+			text-decoration: none;
+			line-height: 75px;
+			vertical-align: center;
+		}
+		#Menu_Box_Selected_Page{
+			display: inline;
+			width: 250px;
+			height: 75px;
+			margin: auto;
+			padding: 10px 20px;
+			background-color: black;
+			color: #ffffff;
+			font-size: 20px;
+			outline-offset: 0px;
+			outline-style: solid;
+			outline-color: #404040;
+			text-decoration: none;
+			line-height: 75px;
+			vertical-align: center;
+		}
+		#Menu_Box a:hover{
+			background-color: #6e6e6e;
+		}
+		#Menu_Box_Selected_Page a:hover{
+			background-color: #d12030
+		}
+		#Menu ul{
+			height: auto;
+			padding: 8px 0px;
+			margin: 0px
+		}
+		#Body{
+			width: 700px;
+			padding: 20px;
+			background-color: #cccccc;
+			margin: auto;	
+		}
+		#ORDER{
+			background-color: #da293b;
+			padding: 0px 200px;
+			border-radius: 8px;
+			font-size: 18;
+			color: white;
+		}
+		#ORDER:hover{
+			background-color: #6b141d;
+			transition-duration: 0.75s;
+		}
+		#table{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		#table tr{
+			width: 75px;
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		.heading {
+		    position: absolute;
+		    text-align: center;
+		    top: 30%;
+  		  width: 100%;
+		}
+		.heading h1 {
+ 		   color: #7ea172;
+		    font-size: 70px;
+		}
+		.heading h3 {
+		    color: #7ea172;
+		    font-size: 20px;
+		}
+		#particles-js {
+ 		   background: black;
+		    height: 100vh;
+		}
