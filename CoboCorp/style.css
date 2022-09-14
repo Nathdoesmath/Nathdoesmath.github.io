@@ -1,0 +1,193 @@
+body, html {
+    height: 100%;
+}
+  
+.parallax {
+  /* The image used */
+  background-image: url("space1.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background: #363636;
+  background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  width: calc(100% - 5px);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.centerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+
+p {
+  text-align: center;
+}
+
+.pillButton {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+@font-face {
+	font-family: 'Azonix';
+	src: url('fonts/Azonix.otf'); 
+	src: 
+		local('Azonix'),
+		url('fonts/Azonix.otf') 
+		format('opentype');
+}
+
+@font-face {
+	font-family: 'Coves Light';
+	src: url('fonts/Coves Light.otf'); 
+	src: 
+		local('Coves Light'),
+		url('fonts/Coves Light.otf') 
+		format('opentype');
+}
+
+/* h1 { 
+  font-family: 'Azonix', arial, serif; 
+} */
+
+.pillButton:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Navigation Bar */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  text-align: center;
+  background: #363636;
+  background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #4c09a3 0%, #b2c506 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #4c09a3 0%,#b2c506 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  width: calc(100% - 5px);
+  height: 100%;
+  /* overflow: hidden; */
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+	
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background: #363636;
+  background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #0693d4 0%, #d49408 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #0693d4 0%,#d49408 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+
+
+/* Actual Navbar */
+
+::-webkit-scrollbar
+{
+  width: 0;
+}
+
+#scrollPath 
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar
+{
+	
+  --heightX: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: var(--height);
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 4.5s linear infinite;
+}
+
+@keyframes animate
+{
+  0%,100%
+  {
+    filter: hue-rotate(0deg);
+  }
+  50%
+  {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressbar:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}
+
+#progressbar:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}

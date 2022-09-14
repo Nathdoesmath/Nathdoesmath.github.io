@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CoboCorp</title>
+    <!--<link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>-->
+    <link href="fonts/Azonix.otf" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body style="background-color: #363636; font-family: 'Azonix', arial, serif; color: white;">
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <script type="text/javascript">
+		
+      window.onscroll = function(){
+ 			var progressHeight = ((window.pageYOffset) / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+     		document.getElementById("progressbar").style.height = (progressHeight + "%");}
+    </script>
+    <!--<button class="pillButton">Pill Button</button>-->
+    <header style="text-align: center;">
+      <h1>CoboCorp</h1>
+      <h3>Innovative solutions for a multivariate challenge.</h3>
+      <div class="topnav">
+        <a href="index">Home</a>
+        <a class="active" href="coboClient">CoboClient</a>
+        <a href="products">Products</a>
+      </div>
+    </header>
+    <div style="text-align: center;">
+        <img src="images/homeScreen.gif" alt="Home Screen" class="centerImage" style="padding: 20px;">
+        <div>
+            <p style="text-align: center; width: 50%; left: 25%; position: relative;">CoboClient features many modules supplying the user with the upmost advanced and revolutionary features nessecary to dominate the competition.  Whether it be for personal accomplishment, or sweet revenge, CoboClient has you covered in all aspects relating to Minecraft enhancement!</p>
+        </div>
+        <h1 style="padding: 30px;">Categories</h1>
+        <img src="images/modules.gif" alt="Categories" class="centerImage" style="padding: 20px;">
+        <p style="text-align: center; width: 50%; left: 25%; position: relative;">The categories in CoboClient have all the nessecary features required to control the Battlefield!</p>
+        <h1 style="padding: 30px;">Modules</h1>
+        <img src="images/ActivatedModules.gif" alt="Module List" class="centerImage" style="padding: 20px;">
+        <p style="text-align: center; width: 50%; left: 25%; position: relative;">CoboClient is vast aray of modules allows the user to jump ahead in the competition, and bring down anything that may remain!</p>
+    </div>
+  </body>
+</html>
